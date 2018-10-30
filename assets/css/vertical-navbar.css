@@ -1,0 +1,51 @@
+/* Vertical navigation bar (navbar) */
+
+ul {
+    list-style-type: none; /*remove bullets, marging and padding from the list*/
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+}
+
+li a {
+    display: block; /*make all the link area clickable, not just the text */
+    text-decoration: none; /*no underline text in links*/
+    padding: 8px 16px;
+    color: #000;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* with borders and text centered */
+
+ul {
+    border: 1px solid #555;
+}
+
+li {
+    text-align: center;
+    border-bottom: 1px solid #555;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+/* sticky full height navbar */
+
+ul {
+    width: 25%;
+    height: 100%;
+    position: fixed;
+    overflow: auto;
+}
+
